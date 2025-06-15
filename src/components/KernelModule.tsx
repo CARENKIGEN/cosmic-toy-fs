@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { CodeIcon, DownloadIcon, PlayIcon, StopIcon } from 'lucide-react';
+import { CodeIcon, DownloadIcon, PlayIcon, StopCircleIcon } from 'lucide-react';
 import { toast } from 'sonner';
 
 const KernelModule = () => {
@@ -366,7 +366,7 @@ int toyfs_parse_options(char *options, struct toyfs_mount_opts *opts);
               disabled={moduleStatus === 'unloaded' || moduleStatus === 'unloading'}
               className="bg-red-600 hover:bg-red-700 text-white"
             >
-              <StopIcon className="w-4 h-4 mr-2" />
+              <StopCircleIcon className="w-4 h-4 mr-2" />
               Unload Module
             </Button>
             <Button

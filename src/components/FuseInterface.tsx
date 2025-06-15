@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PlayIcon, StopIcon, DownloadIcon, RefreshIcon } from 'lucide-react';
+import { PlayIcon, StopCircleIcon, DownloadIcon, RefreshCwIcon } from 'lucide-react';
 import { toast } from 'sonner';
 
 const FuseInterface = () => {
@@ -377,7 +377,7 @@ echo "=== Test completed successfully ==="
               disabled={fuseStatus === 'unmounted' || fuseStatus === 'unmounting'}
               className="bg-red-600 hover:bg-red-700 text-white"
             >
-              <StopIcon className="w-4 h-4 mr-2" />
+              <StopCircleIcon className="w-4 h-4 mr-2" />
               Unmount
             </Button>
             <Button
@@ -385,7 +385,7 @@ echo "=== Test completed successfully ==="
               disabled={fuseStatus !== 'mounted'}
               className="bg-blue-600 hover:bg-blue-700 text-white"
             >
-              <RefreshIcon className="w-4 h-4 mr-2" />
+              <RefreshCwIcon className="w-4 h-4 mr-2" />
               Test
             </Button>
             <Button

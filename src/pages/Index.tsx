@@ -7,10 +7,10 @@ import { Textarea } from '@/components/ui/textarea';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { FileSystem } from '@/components/FileSystem';
-import { KernelModule } from '@/components/KernelModule';
-import { FuseInterface } from '@/components/FuseInterface';
-import { TerminalInterface } from '@/components/TerminalInterface';
+import FileSystem from '@/components/FileSystem';
+import KernelModule from '@/components/KernelModule';
+import FuseInterface from '@/components/FuseInterface';
+import TerminalInterface from '@/components/TerminalInterface';
 import { HardDriveIcon, CpuIcon, TerminalIcon, CodeIcon } from 'lucide-react';
 
 const Index = () => {
@@ -28,7 +28,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <Hard DriveIcon className="w-8 h-8 text-green-400" />
+              <HardDriveIcon className="w-8 h-8 text-green-400" />
               <div>
                 <h1 className="text-2xl font-bold text-green-400">ToY FS</h1>
                 <p className="text-sm text-green-300/60">Linux Kernel Module Filesystem</p>
